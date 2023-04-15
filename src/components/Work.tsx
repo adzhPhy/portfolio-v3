@@ -1,7 +1,7 @@
+import { WorkProps } from "@/data/client";
 import { FC } from "react";
 
-interface WorkProps {}
-const Work: FC<WorkProps> = ({}) => {
+const Work = ({ works }: { works: WorkProps[] }) => {
   return <div>Work</div>;
 };
 

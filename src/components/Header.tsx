@@ -5,7 +5,7 @@ const Header = ({}) => {
   return (
     <div
       id="header"
-      className="xxs:max-md:w-full w-3/4 flex flex-col md:flex-row m-6 p-6 mt-5 justify-center items-center gap-4 border-b border-th-tertiary "
+      className="xxs:max-md:w-full w-3/4 flex flex-col md:flex-row m-6 p-6 mt-5 justify-center items-center gap-4 border-b border-th-tertiary rounded-xl"
     >
       <div className="min-w-fit flex flex-col justify-center items-center md:justify-end md:items-end gap-3 p-4 xxs:max-md:p-0">
         <div className="min-w-fit w-full flex flex-row flex-wrap justify-center md:justify-end items-center gap-3 pt-1">
@@ -64,7 +64,6 @@ const Header = ({}) => {
           height={500}
           alt="My Headshot"
           className="p-2"
-          quality={100}
           style={{ borderRadius: "15%" }}
         />
       </div>
