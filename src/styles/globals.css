@@ -2,26 +2,89 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+:root {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  transition: all;
+  --background: #001437;
+  --primary: #7898fb;
+  --secondary: #5ce5d5;
+  --tertiary: #c3f85f;
+}
+
+[data-theme="light"] {
+  --background: #001437;
+  --primary: #7898fb;
+  --secondary: #5ce5d5;
+  --tertiary: #c3f85f;
+}
+
+[data-theme="dark1"] {
+  --background: #08053d;
+  --primary: #a6f3ef;
+  --secondary: #440bd4;
+  --tertiary: #ff4d82;
+}
+
+[data-theme="dark2"] {
+  --background: #0f0827;
+  --primary: #613f81;
+  --secondary: #c574ee;
+  --tertiary: #41b3f0;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: url("../../public/images/background.png") repeat var(--background);
+  color: white;
+}
+
+main {
+  height: 100%;
+  border: 1px solid;
+}
+
+main > * {
+  border: 1px solid red;
+}
+
+.select-clicked {
+  border: 2px solid var(--tertiary);
+  box-shadow: 0 0 0.8em var(--tertiary);
+}
+
+.menu {
+  list-style: none;
+  padding: 0.2em 0.5em;
+  border: 1px var(--tertiary) solid;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+  border-radius: 0.5em;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  transition: 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.menu li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.2em 0.5em;
+  margin: 0.3em 0;
+  border-radius: 0.5em;
+  cursor: pointer;
+  color: rgb(234, 230, 230);
+  background-color: #363535;
+}
+
+.menu li:hover {
+  background: var(--primary);
 }
