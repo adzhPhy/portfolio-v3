@@ -40,7 +40,7 @@ const Navbar = ({}) => {
           return null;
         }
       }}
-      className="w-3/4 flex justify-center md:justify-between items-center px-4 py-2 navbar"
+      className="sticky w-3/4 flex justify-center md:justify-between items-center px-4 py-2 border-y-2 border-th-tertiary rounded-xl"
     >
       <div className="bg-slate-200 flex flex-row justify-center items-center gap-2">
         <Image

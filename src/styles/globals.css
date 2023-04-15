@@ -50,10 +50,6 @@ main {
   border: 1px solid;
 }
 
-main > * {
-  border: 1px solid red;
-}
-
 .select-clicked {
   border: 2px solid var(--tertiary);
   box-shadow: 0 0 0.8em var(--tertiary);
@@ -87,4 +83,10 @@ main > * {
 
 .menu li:hover {
   background: var(--primary);
+}
+
+.hover-animation:hover {
+  transform: scale(1.1);
+  transition-delay: 200ms;
+  transition-duration: 600ms;
 }
