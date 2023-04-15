@@ -3,7 +3,10 @@ import Image from "next/image";
 
 const Skills = ({ skills }: { skills: SkillProps[] }) => {
   return (
-    <div className="hide-content w-full flex-col flex justify-center items-center">
+    <div
+      id="skills"
+      className="hide-content w-full flex-col flex justify-center items-center"
+    >
       <h2 className="text-4xl font-extrabold text-th-tertiary text-left mt-8 mb-4">
         Skills
       </h2>
