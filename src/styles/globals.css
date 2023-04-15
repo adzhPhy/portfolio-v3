@@ -47,7 +47,6 @@ body {
 
 main {
   height: 100%;
-  border: 1px solid;
 }
 
 .select-clicked {
@@ -89,6 +88,39 @@ main {
   transform: scale(1.1);
   transition-delay: 200ms;
   transition-duration: 600ms;
+}
+
+.hover-animation-card:hover {
+  transform: scale(1.1);
+  transition-delay: 200ms;
+  transition-duration: 700ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.work-link {
+  color: var(--background);
+  opacity: 0;
+  transition: opacity 400ms ease-in-out;
+}
+
+.work-link:hover {
+  opacity: 1;
+  background-color: rgba(235, 231, 231, 0.2);
+}
+
+.work-card-animation {
+  animation: fadeIn 600ms ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(25%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-5%);
+  }
 }
 
 .glitch {

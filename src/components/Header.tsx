@@ -23,7 +23,7 @@ const Header = ({}) => {
               <Image
                 src="/images/cvicon.png"
                 width={42}
-                height={52}
+                height={42}
                 alt="CV Icon"
               />
             </a>
@@ -44,7 +44,7 @@ const Header = ({}) => {
           {circleImages.map((image) => (
             <div
               key={`${image}-icon`}
-              className="min-w-fit w-20 md:w-24 h-20 md:w-24 flex justify-center items-center rounded-full bg-th-background shadow-lg hover:shadow-2xl shadow-th-tertiary hover-animation transition-all ease-out"
+              className="min-w-fit w-20 md:w-24 h-20 md:h-24 flex justify-center items-center rounded-full bg-th-background shadow-lg hover:shadow-2xl shadow-th-tertiary hover-animation transition-all ease-out"
             >
               <Image
                 src={`/images/${image}.png`}

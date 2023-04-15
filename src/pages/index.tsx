@@ -29,7 +29,7 @@ export default function Home({
       <Navbar />
       <Header />
       <About abouts={abouts} />
-      <Work />
+      <Work works={works} />
       <Skills />
     </main>
   );

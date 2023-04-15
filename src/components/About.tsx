@@ -20,7 +20,7 @@ const About = ({ abouts }: { abouts: AboutProps[] }) => {
           <span className="text-th-tertiary text-5xl bold">the Bold</span>
         </h4>
       </div>
-      <div className="hide-content flex justify-center items-start flex-wrap mt-8 mb-12 pb-6">
+      <div className="hide-content flex justify-center items-start flex-wrap mt-8 mb-4 pb-6">
         {abouts?.map((about: AboutProps) => (
           <div
             key={about.title}
