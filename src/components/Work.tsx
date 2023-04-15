@@ -27,7 +27,7 @@ const Work = ({ works }: { works: WorkProps[] }) => {
   };
 
   return (
-    <div className="hide-content w-3/4 min-w-fit flex-col flex justify-center items-center border-y-2 border-th-tertiary rounded-xl">
+    <div className="hide-content w-3/4 flex-col flex justify-center items-center border-y-2 border-th-tertiary rounded-xl">
       <h2 className="text-4xl font-extrabold text-th-tertiary text-left mt-8 mb-4">
         Projects
       </h2>

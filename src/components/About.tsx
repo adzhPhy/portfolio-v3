@@ -6,7 +6,7 @@ const About = ({ abouts }: { abouts: AboutProps[] }) => {
   return (
     <div
       id="about"
-      className="w-3/4 min-w-fit h-full flex flex-col justify-center items-center border-y-2 border-th-tertiary rounded-xl"
+      className="w-3/4 min-w-fit flex flex-col justify-center items-center border-y-2 border-th-tertiary rounded-xl"
     >
       <div className="max-w-fit flex flex-col md:flex-row flex-wrap align-center place-items-center mt-4 xxs:gap-4">
         <h4 className="glitch font-serif text-5xl font-extrabold justify-self text-center text-th-primary italic">

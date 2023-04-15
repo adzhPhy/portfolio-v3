@@ -105,15 +105,24 @@ const Navbar = ({}) => {
           </div>
           {toggledMenu && (
             <ul className="menu absolute bg-th-background text-th-background">
-              <li onClick={() => setTheme("light")} className="light">
+              <li
+                onClick={() => setTheme("light")}
+                className="light flex gap-1"
+              >
                 <Gamepad size={32} />
                 Arcade
               </li>
-              <li onClick={() => setTheme("dark1")} className="dark1">
+              <li
+                onClick={() => setTheme("dark1")}
+                className="dark1 flex gap-1"
+              >
                 <Gauge size={32} />
                 Neon
               </li>
-              <li onClick={() => setTheme("dark2")} className="dark2">
+              <li
+                onClick={() => setTheme("dark2")}
+                className="dark2 flex gap-1"
+              >
                 <GiGalaxy size={32} />
                 Galactic
               </li>

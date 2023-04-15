@@ -35,7 +35,7 @@
 
 [data-theme="dark2"] {
   --background: #0f0827;
-  --primary: #613f81;
+  --primary: #3a0988;
   --secondary: #c574ee;
   --tertiary: #41b3f0;
 }
@@ -47,6 +47,21 @@ body {
 
 main {
   height: 100%;
+}
+
+li.light {
+  color: #c3f85f;
+  background-color: #001437;
+}
+
+li.dark1 {
+  color: #ff4d82;
+  background-color: #08053d;
+}
+
+li.dark2 {
+  color: #41b3f0;
+  background-color: #0f0827;
 }
 
 .select-clicked {
@@ -72,12 +87,10 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 0.2em 0.5em;
+  padding: 0.5em 0.5em;
   margin: 0.3em 0;
   border-radius: 0.5em;
   cursor: pointer;
-  color: rgb(234, 230, 230);
-  background-color: #363535;
 }
 
 .menu li:hover {

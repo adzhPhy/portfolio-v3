@@ -30,7 +30,7 @@ export default function Home({
       <Header />
       <About abouts={abouts} />
       <Work works={works} />
-      <Skills />
+      <Skills skills={skills} />
     </main>
   );
 }
