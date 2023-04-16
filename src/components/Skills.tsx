@@ -5,7 +5,7 @@ const Skills = ({ skills }: { skills: SkillProps[] }) => {
   return (
     <div
       id="skills"
-      className="hide-content w-full flex-col flex justify-center items-center"
+      className="hide-content border-t-2 border-th-tertiary rounded-xl w-full md:w-3/4 flex-col flex justify-center items-center"
     >
       <h2 className="text-4xl font-extrabold text-th-tertiary text-left mt-8 mb-4">
         Skills

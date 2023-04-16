@@ -29,14 +29,14 @@ const Header = ({}) => {
             </a>
           </div>
         </div>
-        <div className="md:mx-1 mx-0 my-2 border font-mono flex flex-col justify-end items-end md:p-4 p-1 rounded-2xl gap-2 bg-gradient-to-br from-th-secondary via-th-primary to-th-background">
-          <p className="text-md md:text-lg text-left text-th-tertiary leading-3 uppercase">
+        <div className="md:mx-1 mx-0 my-2 border font-mono flex flex-col justify-end items-end md:p-4 p-2.5 rounded-2xl gap-2 bg-gradient-to-br from-th-secondary via-th-primary to-th-background">
+          <p className="text-md md:text-lg text-left text-th-tertiary leading-3">
             🕸🧑‍💻Aspiring Web Developer
           </p>
-          <p className="text-md md:text-lg text-left text-th-tertiary leading-3 uppercase text-right">
+          <p className="text-md md:text-lg text-th-tertiary leading-3 text-right">
             🔭Lifelong Explorer
           </p>
-          <p className="text-md md:text-lg text-left text-th-tertiary leading-3 uppercase text-right">
+          <p className="text-md md:text-lg text-th-tertiary leading-3 text-right">
             🎸Guitar Player
           </p>
         </div>
