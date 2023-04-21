@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
 import About from "@/components/About";
@@ -26,6 +27,9 @@ export default function Home({
 }) {
   return (
     <main className="flex flex-col justify-center items-center">
+      <Head>
+        <title>Welcome to My Portfolio!</title>
+      </Head>
       <Navbar />
       <Header />
       <About abouts={abouts} />

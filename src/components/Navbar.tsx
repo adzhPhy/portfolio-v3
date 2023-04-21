@@ -44,8 +44,11 @@ const Navbar = ({}) => {
     >
       <div className="bg-slate-200 flex flex-row justify-center items-center gap-2">
         <Image
-          src="/images/adzhalogo.png"
+          src="/images/adzhalogo.webp"
           alt="Portfolio Logo"
+          priority
+          placeholder="blur"
+          blurDataURL="/images/adzhalogo.webp"
           width={128}
           height={128}
           style={{ background: "white", borderRadius: "20%", opacity: 0.65 }}

@@ -41,7 +41,8 @@
 }
 
 body {
-  background: url("../../public/images/background.png") repeat var(--background);
+  background: url("../../public/images/background.webp") repeat
+    var(--background);
   color: white;
 }
 

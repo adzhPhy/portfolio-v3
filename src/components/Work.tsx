@@ -67,14 +67,24 @@ const Work = ({ works }: { works: WorkProps[] }) => {
                 />
                 <div className="flex justify-center items-center absolute top-0 left right-0 bottom-0 w-full h-full rounded-lg work-link">
                   <div className="gap-3 flex flex-row">
-                    <a href={work.projectLink} target="_blank" rel="noreferrer">
+                    <a
+                      href={work.projectLink}
+                      aria-label="Link to active project"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <div className="flex justify-center items-center">
-                        <Link size={42} />
+                        <Link size={42} aria-label="Project Link Logo" />
                       </div>
                     </a>
-                    <a href={work.codeLink} target="_blank" rel="noreferrer">
+                    <a
+                      href={work.codeLink}
+                      aria-label="Link to Github Repo of active project"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <div className="flex justify-center items-center">
-                        <Github size={42} />
+                        <Github aria-label="Github Logo" size={42} />
                       </div>
                     </a>
                   </div>
@@ -86,9 +96,9 @@ const Work = ({ works }: { works: WorkProps[] }) => {
                     {work.tags}
                   </p>
                 </div>
-                <h4 className="text-lg font-mono underline font-extrabold text-th-primary text-center mt-4 mb-4 mt-2 leading-6">
+                <h5 className="text-lg font-mono underline font-extrabold text-th-primary text-center mt-4 mb-4 mt-2 leading-6">
                   {work.title}
-                </h4>
+                </h5>
                 <p className="text-md font-mono font-semibold text-center text-th-primary leading-5 mt-1">
                   {work.description}
                 </p>

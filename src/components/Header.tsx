@@ -19,9 +19,12 @@ const Header = ({}) => {
             </div>
           </div>
           <div className="max-w-fit mr-1 hover-animation transition-all ease-out shadow-xl shadow-th-primary hover:shadow-2xl rounded-xl bg-gradient-to-br from-th-secondary via-th-primary to-th-background">
-            <a href="https://drive.google.com/file/d/1VqBV_D9PtqLKJZ6VFYlIf5i6tw-RqpN6/view?usp=sharing">
+            <a
+              aria-label="CV Icon"
+              href="https://drive.google.com/file/d/1VqBV_D9PtqLKJZ6VFYlIf5i6tw-RqpN6/view?usp=sharing"
+            >
               <Image
-                src="/images/cvicon.png"
+                src="/images/cvicon.webp"
                 width={42}
                 height={42}
                 alt="CV Icon"
@@ -47,7 +50,7 @@ const Header = ({}) => {
               className="min-w-fit w-20 md:w-24 h-20 md:h-24 flex justify-center items-center rounded-full bg-th-background shadow-lg hover:shadow-2xl shadow-th-tertiary hover-animation transition-all ease-out"
             >
               <Image
-                src={`/images/${image}.png`}
+                src={`/images/${image}.webp`}
                 alt={`${image}`}
                 width={52}
                 height={52}
@@ -59,10 +62,13 @@ const Header = ({}) => {
       </div>
       <div className="min-w-fit flex justify-center items-center">
         <Image
-          src="/images/profilepic.jpg"
+          src="/images/profilepic.webp"
           width={300}
-          height={500}
+          height={450}
           alt="My Headshot"
+          priority
+          placeholder="blur"
+          blurDataURL="/images/profilepic.webp"
           className="p-2"
           style={{ borderRadius: "15%" }}
         />
