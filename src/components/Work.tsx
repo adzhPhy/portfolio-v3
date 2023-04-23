@@ -32,7 +32,7 @@ const Work = ({ works }: { works: WorkProps[] }) => {
       id="work"
       className="hide-content xxs:max-md:w-full w-3/4 flex-col flex justify-center items-center border-y-2 border-th-tertiary rounded-xl"
     >
-      <h2 className="text-4xl font-extrabold text-th-tertiary text-left mt-8 mb-4">
+      <h2 className="text-4xl font-mono font-extrabold text-th-tertiary text-left mt-8 mb-4">
         Projects
       </h2>
       <div className="flex flex-row flex-auto justify-center md:justify-start items-center flex-wrap mx-16 mt-0 mb-8 gap-4">
@@ -40,7 +40,7 @@ const Work = ({ works }: { works: WorkProps[] }) => {
           <div
             key={tag}
             onClick={() => handleWorkFilter(tag)}
-            className="px-1 py-2 text-th-background rounded-md bg-th-tertiary hover:shadow-md hover:shadow-th-primary font-extrabold flex justify-center items-center cursor-pointer transition-all ease-in-out delay-150 duration-150 hover:delay-150 text-sm text-left leading-6"
+            className="px-1 py-2 text-th-background rounded-md bg-th-tertiary hover:shadow-md hover:shadow-th-primary font-mono font-extrabold flex justify-center items-center cursor-pointer transition-all ease-in-out delay-150 duration-150 hover:delay-150 text-sm text-left leading-6"
           >
             {tag}
           </div>

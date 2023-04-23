@@ -6,15 +6,15 @@ const About = ({ abouts }: { abouts: AboutProps[] }) => {
   return (
     <div
       id="about"
-      className="w-3/4 min-w-fit flex flex-col justify-center items-center border-y-2 border-th-tertiary rounded-xl"
+      className="xxs:max-md:w-full w-3/4 min-w-fit flex flex-col justify-center items-center border-y-2 border-th-tertiary rounded-xl"
     >
-      <div className="max-w-fit flex flex-col md:flex-row flex-wrap align-center place-items-center mt-4 xxs:gap-4">
-        <h4 className="glitch font-serif text-5xl font-extrabold justify-self text-center text-th-primary italic">
+      <div className="font-serif max-w-fit flex flex-col md:flex-row flex-wrap align-center place-items-center mt-4 xxs:gap-4">
+        <h4 className="glitch text-5xl font-extrabold justify-self text-center text-th-primary italic">
           <span className="text-th-tertiary text-5xl bold">Audentes</span>
           <br />
           Fortuna iuvat
         </h4>
-        <h4 className="glitch font-serif text-5xl font-extrabold justify-self text-center text-th-primary italic">
+        <h4 className="glitch text-5xl font-extrabold justify-self text-center text-th-primary italic">
           Luck favours
           <br />
           <span className="text-th-tertiary text-5xl bold">the Bold</span>

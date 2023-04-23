@@ -132,7 +132,7 @@ const Navbar = ({}) => {
             </ul>
           )}
         </div>
-        <div className="nav-list flex gap-4 m-4 font-semibold flex-wrap">
+        <div className="nav-list flex gap-4 m-4 font-mono font-semibold flex-wrap">
           <Link
             className="rounded-lg hover:underline underline-offset-4"
             href="#home"
