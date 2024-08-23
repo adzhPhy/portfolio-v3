@@ -36,7 +36,7 @@ const Work = ({ works }: { works: WorkProps[] }) => {
         Projects
       </h2>
       <div className="flex flex-row flex-auto justify-center md:justify-start items-center flex-wrap mx-16 mt-0 mb-8 gap-4">
-        {workTags.map((tag: string) => (
+        {workTags?.map((tag: string) => (
           <div
             key={tag}
             onClick={() => handleWorkFilter(tag)}
