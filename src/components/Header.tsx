@@ -21,7 +21,7 @@ const Header = ({}) => {
           <div className="max-w-fit mr-1 hover-animation transition-all ease-out shadow-xl shadow-th-primary hover:shadow-2xl rounded-xl bg-gradient-to-br from-th-secondary via-th-primary to-th-background">
             <a
               aria-label="CV Icon"
-              href="https://drive.google.com/file/d/1VqBV_D9PtqLKJZ6VFYlIf5i6tw-RqpN6/view?usp=sharing"
+              href="https://drive.google.com/file/d/1s2ed-FeYpWx4BDslQVV4E7X-Tcizt27Z/view?usp=drivesdk"
             >
               <Image
                 src="/images/cvicon.webp"
